@@ -1,0 +1,33 @@
+#Tic-Tac-Toe
+
+"""def TL():
+    if (input("H")):
+        return True
+    else:
+        return False
+
+def game_play():
+    if (TL() == True):
+        print("Top Left is Black")
+    else:
+        print("Top Left is White")  """  
+
+#value = input("Please enter a string: \n")
+
+#print(f"You entered {value}")
+
+def is_prime(n):
+    """
+    >>> is_prime(10)
+    False
+    >>> is_prime(7)
+    True
+    """
+    "*** YOUR CODE HERE ***"
+    counter = 2
+    while counter < n:
+        if n % counter == 0:
+            return False
+        counter += 1
+    return True
+

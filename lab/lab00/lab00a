@@ -1,0 +1,20 @@
+def decrypt(encrypted_message, key):
+    assert isinstance(encrypted_message, str) and isinstance(key, str), "ERROR"
+
+    message = ""
+    offset = 0
+    for char in key:
+        ascii_num = ord(char)
+        offset += ascii_num
+
+    for char in encrypted_message:
+        ascii_num = ord(char)
+        ascii_num -= offset
+        message += chr(ascii_num)
+
+    return message
+
+encrypted_message = "ոօ֐ֆօռ՚ոօ՚ֆջռ"
+key = "anyoneCanCode"
+
+print("The passcode is: " + decrypt(encrypted_message, key))
