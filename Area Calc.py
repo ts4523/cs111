@@ -1,4 +1,4 @@
-"""r = 0 #radius
+r = 0 #radius
 h = 0 #height
 l = 0 #length
 A = 0 #Area
@@ -20,7 +20,7 @@ elif shape == "rectangle":
     A = h*l
     print(f"Area = {A}")
 else:
-    print("Check spelling. Answers must be all lower case. \n")"""
+    print("Check spelling. Answers must be all lower case. \n")
 
 def MyCoolFunction(x,y):
     return 2*x + y - 1
